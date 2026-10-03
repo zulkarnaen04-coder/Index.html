@@ -9,7 +9,6 @@
     body { background: linear-gradient(135deg, #0d1b2a, #1b263b); color: #ffffff; min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; padding: 10px; overflow-x: hidden; }
     
     /* Anti-Cheat Overlay */
-     Zulkarnaen, S.Sn., M.Sn
     .cheat-warning { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(230, 57, 70, 0.95); z-index: 9999; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px; }
     .cheat-warning h1 { font-size: 28px; color: #fff; margin-bottom: 15px; text-transform: uppercase; }
     .cheat-warning p { font-size: 16px; color: #f8f9fa; margin-bottom: 20px; line-height: 1.5; }
@@ -81,7 +80,7 @@
 
   <!-- Screen Awal / Start -->
   <div class="start-screen" id="start-screen">
-    <div class="start-title">SOAL MUSIK KELAS 7 </div>
+    <div class="start-title">SOAL MUSIK KELAS 7 Zulkarnaen</div>
     <div class="start-desc">Sistem Kuis Online Anti-Curang & Terdata di Google Sheets</div>
     
     <div class="student-form">
@@ -121,19 +120,14 @@
   </div>
 
   <!-- Main Card -->
-  <div class="main-card">
-    <div>
+  <div class="main-card"><div>
       <div class="question-box" id="question-box">Memuat soal...</div>
-      
-      <div class="options-grid" id="options-grid"></div>
+            <div class="options-grid" id="options-grid"></div>
     </div>
-
     <div class="footer-actions">
       <button class="next-btn" id="next-btn" onclick="nextQuestion()">Soal Berikutnya ➔</button>
       <div class="status-bar-mini" id="status-dots"></div>
     </div>
-  </div>
-
   <script>
     // ⚠️ MASUKKAN URL GOOGLE APPS SCRIPT ANDA DI SINI! ⚠️
     const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwLlFjDUN03qJ4oRzW4RXMetplgcasO4AW-6HZv6OduRg8IRqiDYihlj37hYBK-HZJm/exec";
@@ -180,8 +174,8 @@
       { q: "Lagu \"Ibu Kita Kartini\" diciptakan oleh...", options: ["C. Simanjuntak", "W.R. Soepratman", "Ismail Marzuki", "L. Manik"], correctText: "W.R. Soepratman" },
       { q: "Bagi siswa yang tidak mendapatkan alat musik angklung maupun drumset, tugas mereka adalah...", options: ["Menjadi penonton saja", "Membantu memegang proyektor", "Ikut serta menyanyikan lagu", "Memutar metronom"], correctText: "Ikut serta menyanyikan lagu" },
 
-      { q: "Nada pembentuk Akor C Mayor pada Kelompok 1 terdiri dari nada...", options: ["C - E - G", "D - F - A", "F - A - C", "G - B - D"], correctText: "C - E - G" },
-      { q: "Kelompok 2 memainkan Akor Dm (D minor) yang terdiri dari nada...", options: ["C - E - G", "D - F - A", "F - A - C", "G - B - D"], correctText: "D - F - A" },
+      { q: "Nada pembentuk Akor C Mayor pada Kelompok 1 terdiri dari nada...", options: ["C - E - G", "C - E - A", "F - A - C", "G - B - D"], correctText: "C - E - G" },
+      { q: "Kelompok 2 memainkan Akor Dm (D minor) yang terdiri dari nada...", options: ["D - E - G", "D - F - A", "F - A - C", "G - B - D"], correctText: "D - F - A" },
       { q: "Susunan nada F - A - C merupakan pembentuk akor...", options: ["C Mayor", "D minor", "F Mayor", "G Mayor"], correctText: "F Mayor" },
       { q: "Akor G Mayor yang dimainkan oleh Kelompok 4 terdiri dari susunan nada...", options: ["C - E - G", "D - F - A", "F - A - C", "G - B - D"], correctText: "G - B - D" },
       { q: "Berdasarkan jenisnya, instrumen musik Angklung dimainkan dengan cara...", options: ["Dipukul", "Digoyang / Digetarkan", "Ditiup", "Dipetik"], correctText: "Digoyang / Digetarkan" },
